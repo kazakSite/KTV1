@@ -1,6 +1,6 @@
 <?php
-$user='root';
-$pwd='zrft@12g';
+$user='kazak';
+$pwd='etavouslafortune';
 $host='localhost';
 $bdd='KazakDev';
 ?>
