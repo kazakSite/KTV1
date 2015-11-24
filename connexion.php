@@ -1,6 +1,6 @@
 <?php
 $user='kazak';
 $pwd='etavouslafortune';
-$host='localhost';
+$host='eurocollectors.fr';
 $bdd='KazakDev';
 ?>
