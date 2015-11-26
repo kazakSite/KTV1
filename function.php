@@ -8,100 +8,47 @@ function calculDate($date){
 			$arrayDate=explode("/",$date);
 			//echo $arrayDate[2];
 			//echo "<br>";
-			if ($arrayDate[2] === "janvier"){
-					$mois = 1;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
+			switch ($arrayDate[2]) {
+				case "janvier":
+        				$mois = 1;
+	 				break;
+	 			case "février":
+        				$mois = 2;
+	 				break;
+	 			case "mars":
+        				$mois = 3;
+	 				break;
+	 			case "avril":
+        				$mois = 4;
+	 				break;
+	 			case "mai":
+        				$mois = 5;
+	 				break;
+	 			case "juin":
+        				$mois = 6;
+	 				break;
+	 			case "juillet":
+        				$mois = 7;
+	 				break;
+	 			case "août":
+        				$mois = 8;
+	 				break;
+	 			case "septembre":
+        				$mois = 9;
+	 				break;
+	 			case "octobre":
+        				$mois = 10;
+	 				break;
+	 			case "novembre":
+        				$mois = 11;
+	 				break;
+	 			case "décembre":
+        				$mois = 12;
+	 				break;
 			}
-			if ($arrayDate[2] === "février"){
-					$mois = 2;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "mars"){
-					$mois = 3;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "avril"){
-					$mois = 4;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "mai"){
-					$mois = 7;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-				if ($arrayDate[2] === "juin"){
-					$mois = 6;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "juillet"){
-					$mois = 7;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "mars"){
-					$mois = 3;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "juin"){
-					$mois = 6;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "juillet"){
-					$mois = 7;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-				if ($arrayDate[2] === "août"){
-					$mois = 8;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if (strcmp($arrayDate[2] , "septembre")===0){
-				
-					$mois = 9;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-					
-					//echo $date;
-			}
-			if ($arrayDate[2] === "octobre"){
-					$mois = 10;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "novembre"){
-					$mois = 11;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-			if ($arrayDate[2] === "décembre"){
-					$mois = 12;
-					$jour = $arrayDate[1];
-					$annee = $arrayDate[3];
-					$date = $annee.'-'.$mois.'-'.$jour;
-			}
-
+			$jour = $arrayDate[1];
+			$annee = $arrayDate[3];
+			$date = $annee.'-'.$mois.'-'.$jour;
 return $date;
 	
 }
